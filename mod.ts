@@ -53,6 +53,7 @@ serve({
         return new Response(await response.arrayBuffer(), {
           headers: {
             'cache-control': `max-age=${86400 * 1}`,
+            'content-type': `image/png`,
           },
         });
       } else {
