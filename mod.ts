@@ -21,6 +21,7 @@ serve({
           headers: {
             'content-type': 'application/json',
             'cache-control': `max-age=${86400 * 1}`,
+            'access-control-allow-origin': '*',
           },
         });
       } else {
